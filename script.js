@@ -123,4 +123,11 @@ form.addEventListener('submit', e =>{
     html += `<td>${bank.getAttribute('val') || ""}</td>`;
     html += "</tr>"
     table.innerHTML += html;
+    e.target.reset()
+    logo.style.backgroundImage = ''
+    card_number.innerText = '0000 0000 0000 0000'
+    exp_date.innerText = '03/23'
+    cardholder.innerText = 'IVAN IVANOV'
+    system.style.backgroundImage = ''
+    card.style.backgroundColor = '#AFAFAF'
 })
